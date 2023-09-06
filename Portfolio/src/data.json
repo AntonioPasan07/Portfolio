@@ -1,0 +1,31 @@
+
+{   "project":{
+    "card1": {
+        "title": "Proyecto Eventos",
+        "img": "https://www.rotularte.com.ar/wp-content/uploads/ideas-fiestas-eventos-empresariales.jpg",
+        "link": "https://github.com/AntonioPasan07/Proyecto_Final"
+    },
+    "card2":{
+        "title": "Proyecto web",
+        "img": "https://lh3.googleusercontent.com/p/AF1QipNlqnkew-jztga7_zUs4MXq0xCGkmCrQqxfn3VU=s680-w680-h510",
+        "link": "https://github.com/AntonioPasan07/Proyecto-Fin"
+    },
+    "card3": {
+        "title": "proyecto Backend",
+        "img": "https://assets.bitdegree.org/online-learning-platforms/storage/media/2018/11/What-Is-A-Back-End-Developer-And-How-Do-I-Become-One.jpg",
+        "link": "https://github.com/AntonioPasan07/fs-pt0123-url-shorter-exercise"
+
+    }
+},
+     "soft":{
+        "skills": {
+            "text1": ["Trabajo en equipo.", "Comunicación.", "Gestión del tiempo.", "Adaptabilidad.", "Resolución de problemas.", "Pasión por el aprendizaje."],
+            "text2": ["Motivación.", "Aprendizaje autodidacta.", "Determinación.", "Liderazgo.", "Organización.", "Creatividad."]
+           
+        }
+     }
+
+
+}
+
+   
