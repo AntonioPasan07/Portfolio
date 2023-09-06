@@ -1,9 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2? family= Aldrich & family= Gruppo & family= Mulish:wght@300 & family= Urbanist & family= Yeseva+One & display=swap' );
 body {
+  font-family: 'Aldrich', sans-serif;
   margin: 0;
-  display: flex;
+  padding: 0;
   width: 100%;
   background-color: rgb(88, 84, 84);
+  
 }
+
 
 
