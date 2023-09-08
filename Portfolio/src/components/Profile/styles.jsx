@@ -86,11 +86,11 @@ const slideInFromTop = keyframes`
 `
 
 const MotionFoto = styled(motion.img)`
-  border-radius: 50%;
+  //border-radius: 50%;
   margin-top: 15px;
-  border: 7px solid cadetblue;
+//  border: 7px solid cadetblue;
   width: 400px;
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
+ // box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
   animation: ${slideInFromTop} 2s ease-in-out forwards, ${fadeInAnimation} 1s ease-in-out forwards;
 
   @media (max-width: 540px) {

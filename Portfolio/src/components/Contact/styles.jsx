@@ -8,7 +8,7 @@ width: 100%;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-block: 200px;
+margin-block: 150px;
 @media (max-width: 540px) {
   margin-block: 150px;
    margin-top:20%;

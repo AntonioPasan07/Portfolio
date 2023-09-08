@@ -54,7 +54,7 @@ const Profile = () => {
         </Styled.MotionDivContact>
 
       </Styled.TextContainer>
-      <Styled.MotionFoto src='Foto2.png' variants={fadeIn('right', 0.8)}
+      <Styled.MotionFoto src='marco.png' variants={fadeIn('right', 0.8)}
         initial='hidden'
         whileInView={'show'}
         viewport={{ once: false, amount: 0.4 }}></Styled.MotionFoto>

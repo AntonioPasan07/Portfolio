@@ -9,7 +9,7 @@ const EmailContact = () => {
   const TEMPLATE = import.meta.env.VITE_TEMPLATE
   const USER = import.meta.env.VITE_USER
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
-  console.log(errors)
+  
 
   const sendEmail = (formData) => {
     emailjs
