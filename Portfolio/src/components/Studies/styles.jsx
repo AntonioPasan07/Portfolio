@@ -53,10 +53,12 @@ padding-top:10%;
 const BookInnerFront = styled(BookInner)`
   transform: rotateY(0deg);
   transform-origin: left;
+  margin-top:40px;
 `
 
 const BookInnerBack = styled(BookInner)`
   transform: rotateY(180deg);
+  
   
 `
 

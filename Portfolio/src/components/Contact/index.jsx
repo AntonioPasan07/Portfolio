@@ -2,6 +2,7 @@ import { useForm } from 'react-hook-form'
 import Styled from './styles'
 import React from 'react';
 import emailjs from '@emailjs/browser'
+import { fadeIn } from '../../utils/FadeIn'
 
 const EmailContact = () => {
   const SERVICE = import.meta.env.VITE_SERVICES_ID
@@ -27,7 +28,10 @@ const EmailContact = () => {
 
   return (
     <><Styled.Section >
-      <Styled.Container >
+      <Styled.Container variants={fadeIn('up', 0.4)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.4 }}>
         <Styled.Title id='mensaje'>Escribe a mi Email:</Styled.Title>
         <Styled.Form onSubmit={handleSubmit(sendEmail)}>
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import {motion} from 'framer-motion'
 
 const Section = styled.section`
 display: flex;
@@ -8,17 +8,28 @@ width: 100%;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-margin-block:10%
+margin-block: 200px;
+@media (max-width: 540px) {
+  margin-block: 150px;
+   margin-top:20%;
+  } 
+
 `
-const Container = styled.div`
+const Container = styled(motion.div)`
 margin-top: 10%;
--webkit-box-shadow: 21px 17px 14px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 21px 17px 14px 0px rgba(0,0,0,0.75);
+
 box-shadow: 21px 17px 14px 0px rgba(0,0,0,0.75);
 border: 3px solid #ccc;
 padding: 25px;
 border-radius: 10px;
 background-color: #01454f;
+
+@media (max-width: 540px) {
+  margin-block: 100px;
+   min-width: 350px;
+   margin-top:20%;
+  } 
+
 `
 const Form = styled.form`
 display: flex;
