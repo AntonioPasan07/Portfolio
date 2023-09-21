@@ -23,6 +23,12 @@
             "text2": ["Motivación.", "Aprendizaje autodidacta.", "Determinación.", "Liderazgo.", "Organización.", "Creatividad."]
            
         }
+     },
+
+     "hard": {
+        "skills": {
+            "text": ["Node.js", "JavaScript", "HTML", "CSS3", "React", "PostgreSQL", "Adminer", "Docker"]
+        }
      }
 
 
