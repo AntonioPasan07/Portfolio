@@ -9,7 +9,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-block: 150px;
-@media (max-width: 540px) {
+@media (max-width: 630px) {
   margin-block: 150px;
    margin-top:20%;
   } 
@@ -24,9 +24,9 @@ padding: 25px;
 border-radius: 10px;
 background-color: #01454f;
 
-@media (max-width: 540px) {
+@media (max-width: 630px) {
   margin-block: 100px;
-   min-width: 350px;
+   width: 350px;
    margin-top:20%;
   } 
 
@@ -37,7 +37,7 @@ flex-direction:column;
  min-width: 600px;
 margin: 0 auto;
 
-  @media (max-width: 540px) {
+  @media (max-width: 630px) {
    min-width: 350px;
   } 
 

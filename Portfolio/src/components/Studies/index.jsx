@@ -1,8 +1,9 @@
 import Styled from './styles'
 import { useState } from 'react'
+import data from "../../data.json"
 const Studies = () => {
   const [isOpen, setIsOpen] = useState(false)
-
+ const skills = data.hard.skills
 
   return (<>
     <Styled.BookContainer id="estudios">
@@ -34,30 +35,22 @@ const Studies = () => {
             Control de versiones: Git, GitHub. Metodologías de desarrollo como Scrum. Pruebas y aseguramiento de la calidad: Jest, Jasmine. Gestión de bases de datos: PostgreSQL, MySQL. Frameworks y bibliotecas adicionales: Vue.js. Manejo de estado: Context API. Diseño responsivo. Animaciones: CSS Transitions, CSS Styled Components y un poco de Framer motion. Autenticación y autorización: JWT. Patrones de diseño: MVC. Virtualización y contenedores: Docker, Kubernetes. Arquitectura de microservicios: REST API. Seguridad web: CORS, HTTPS.
           </Styled.Parrafo>
           <Styled.AnimatedIconsContainer>
-            <p>
-              <Styled.IconNode />
-              Node.js/</p>
-            <p>
-              <Styled.IconJavaScript />
-              JavaScript/ </p>
-            <p>
-              <Styled.IconHtml />
-              HTML/ </p>
-            <p>
-              <Styled.IconCss />
-              CSS3/</p>
-            <p>
-              <Styled.IconReact />
-              React/</p>
-            <p>
-              <Styled.IconPosgre />
-              PostgreSQL/</p>
-            <p>
-              <Styled.IconAdminer />
-              Adminer/ </p>
-            <p>
-              <Styled.IconDocker />
-              Docker.</p>
+           
+              
+              {skills.text.map((skill, index) => (
+        <Styled.IconContainer key={index}>
+          {skill === "Node.js" && <Styled.IconNode/> }
+          {skill === "JavaScript" &&  <Styled.IconJavaScript />}
+          {skill === "HTML" && <Styled.IconHtml />}
+          {skill === "CSS3" && <Styled.IconCss />}
+          {skill === "React" && <Styled.IconReact />}
+          {skill === "PostgreSQL" && <Styled.IconPosgre />}
+          {skill === "Adminer" && <Styled.IconAdminer />}
+          {skill === "Docker" && <Styled.IconDocker/>}
+          {skill}
+        </Styled.IconContainer>
+      ))}
+           
           </Styled.AnimatedIconsContainer>
           <Styled.Click>Click</Styled.Click>
         </Styled.BookInnerBack>

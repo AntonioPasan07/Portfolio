@@ -7,10 +7,10 @@ import {FaGithub,FaWhatsapp} from "react-icons/fa"
 
 const TextAnimation = keyframes`
   from {
-    width: 0;
+   width: 0;
   }
   to {
-    width: 100%;
+    width: 600px;
   }
 `;
 
@@ -26,6 +26,7 @@ const fadeInAnimation = keyframes`
 `;
 
 const MotionText = styled(motion.h2)`
+ padding-left:10px;
   padding-top: 35px;
   font-size: 3rem;
   margin-top: -20px;
@@ -35,6 +36,11 @@ const MotionText = styled(motion.h2)`
   opacity: 0;
   animation: ${TextAnimation} , ${fadeInAnimation} 2s ease-in-out forwards;
   transition: margin-top 0.5s ease-in-out;
+
+  @media (max-width: 630px) {
+   font-size : 2.5rem;
+   margin-left:18px;
+  }
 `;
 
 const MotionTexth3 = styled(motion.h3)`
@@ -47,8 +53,10 @@ const MotionTexth3 = styled(motion.h3)`
   transition: margin-top 0.5s ease-in-out;
   text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.8);
 
-  @media (min-width: 540px) {
-   font-size : 2.5rem;
+  @media (max-width: 630px) {
+   font-size : 24px;
+   animation: none;
+  
   }
 `
 
@@ -63,14 +71,18 @@ const MotionIntro = styled(motion.p)`
   font-size: 20px;
   margin-left: 35px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  @media (min-width: 540px) {
+  @media (min-width: 630px) {
    font-size :30px;
   }
 `
 
 const TextContainer = styled.div`
-  margin-left: 40px;
-  margin-right: 45px;
+display: flex;
+flex-direction:column;
+@media (max-width: 630px) {
+   width: 350px;
+   align-items:center;
+  }
 `
 
 
@@ -93,7 +105,7 @@ const MotionFoto = styled(motion.img)`
  // box-shadow: 0 0 80px rgba(0, 0, 0, 0.9);
   animation: ${slideInFromTop} 2s ease-in-out forwards, ${fadeInAnimation} 1s ease-in-out forwards;
 
-  @media (max-width: 540px) {
+  @media (max-width: 630px) {
     margin-top: 20px;
     width: 250px;
   }
@@ -108,7 +120,7 @@ const Container = styled.div`
   margin: 0 50px;
   min-height: 50vh;
 
-  @media (max-width: 540px) {
+  @media (max-width: 630px) {
     flex-direction: column;
     align-items: center;
   }

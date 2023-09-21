@@ -17,7 +17,7 @@ const BookContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 540px) {
+  @media (max-width: 630px) {
     width: 390px;
   }
 `
@@ -58,7 +58,7 @@ const BookInnerFront = styled(BookInner)`
 
 const BookInnerBack = styled(BookInner)`
   transform: rotateY(180deg);
-  
+  margin-top:40px;
   
 `
 
@@ -118,11 +118,12 @@ const AnimatedIconsContainer = styled.div`
    
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
   margin-top: 30px; 
   position: relative;
 
-  @media (max-width: 540px) {
+  @media (max-width: 630px) {
    display:none;
   }
 
@@ -173,6 +174,11 @@ const IconDocker = styled(FaDocker)`
 color: #29B6F6;
 font-size: 50px;
 margin: 5px;
+`
+const IconContainer = styled.p`
+ display:flex;
+ flex-direction:column;
+ align-items: center;
 `
 const card2 = styled.div`
 width:250px;
@@ -255,4 +261,5 @@ export default {
   ContainerSoft,
   Container1,
   Container2,
+  IconContainer,
 };
