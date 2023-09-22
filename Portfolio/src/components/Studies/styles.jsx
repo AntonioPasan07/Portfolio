@@ -11,7 +11,7 @@ import {BiLogoPostgresql}from 'react-icons/bi'
 const BookContainer = styled.div`
   perspective: 1000px;
   width: 600px;
-  height: 800px;
+  height: 820px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -44,9 +44,9 @@ padding-top:10%;
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f0f0f0;
+  background-color: #efefef;
   border-radius: 10px;
-  box-shadow: 0 0 5px white;
+  
  
 `
 
@@ -64,7 +64,7 @@ const BookInnerBack = styled(BookInner)`
 
 const Title = styled.h1`
   text-align: center;
-  color: red;
+  color: #e64433;
   padding-top: 20px;
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -75,7 +75,7 @@ const Title = styled.h1`
 const SubTitle = styled.h3`
   color: #090909;
   font-size: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgb(57 57 57 / 30%);
 `
 
 const Texto1 = styled.h5`
@@ -84,11 +84,11 @@ const Texto1 = styled.h5`
   color: #212020;
   font-size: 20px;
   
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 `
 const Click = styled.h2`
   text-align: center;
-  color: red;
+  color: #e64433;
   padding-top: 20px;
   font-size: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -102,6 +102,8 @@ const Click = styled.h2`
 `
 
 const Parrafo = styled.p`
+ 
+margin:4px;
   color: #3e3737;
   padding-top: 20px;
   font-size: 20px;
@@ -109,9 +111,8 @@ const Parrafo = styled.p`
 `
 
 const Strong = styled.strong`
- // color: #186c6c;
- color: #2f8b90;
- text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ 
+ color:#4770f5;
 `
 
 const AnimatedIconsContainer = styled.div`
@@ -123,7 +124,7 @@ const AnimatedIconsContainer = styled.div`
   margin-top: 30px; 
   position: relative;
 
-  @media (max-width: 630px) {
+  @media (max-width: 1130px) {
    display:none;
   }
 
@@ -176,6 +177,7 @@ font-size: 50px;
 margin: 5px;
 `
 const IconContainer = styled.p`
+  margin: 15px;
  display:flex;
  flex-direction:column;
  align-items: center;

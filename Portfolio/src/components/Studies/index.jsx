@@ -3,7 +3,7 @@ import { useState } from 'react'
 import data from "../../data.json"
 const Studies = () => {
   const [isOpen, setIsOpen] = useState(false)
- const skills = data.hard.skills
+  const skills = data.hard.skills
 
   return (<>
     <Styled.BookContainer id="estudios">
@@ -32,25 +32,24 @@ const Studies = () => {
         <Styled.BookInnerBack >
           <Styled.Title>Hard Skills:</Styled.Title>
           <Styled.Parrafo>
-            Control de versiones: Git, GitHub. Metodologías de desarrollo como Scrum. Pruebas y aseguramiento de la calidad: Jest, Jasmine. Gestión de bases de datos: PostgreSQL, MySQL. Frameworks y bibliotecas adicionales: Vue.js. Manejo de estado: Context API. Diseño responsivo. Animaciones: CSS Transitions, CSS Styled Components y un poco de Framer motion. Autenticación y autorización: JWT. Patrones de diseño: MVC. Virtualización y contenedores: Docker, Kubernetes. Arquitectura de microservicios: REST API. Seguridad web: CORS, HTTPS.
+            Control de versiones: Git, GitHub.<br /> Metodologías de desarrollo como Scrum.<br /> Pruebas y aseguramiento de la calidad: Jest, Jasmine.<br /> Gestión de bases de datos: PostgreSQL, MySQL.<br /> Frameworks y bibliotecas adicionales: Vue.js.<br /> Manejo de estado: Context API. Diseño responsivo.<br /> Animaciones: CSS Transitions, CSS Styled Components y un poco de Framer motion.<br /> Autenticación y autorización: JWT.<br /> Patrones de diseño: MVC.<br /> Virtualización y contenedores: Docker, Kubernetes.<br /> Arquitectura de microservicios: REST API.<br /> Seguridad web: CORS, HTTPS.
           </Styled.Parrafo>
           <Styled.AnimatedIconsContainer>
-           
-              
-              {skills.text.map((skill, index) => (
-        <Styled.IconContainer key={index}>
-          {skill === "Node.js" && <Styled.IconNode/> }
-          {skill === "JavaScript" &&  <Styled.IconJavaScript />}
-          {skill === "HTML" && <Styled.IconHtml />}
-          {skill === "CSS3" && <Styled.IconCss />}
-          {skill === "React" && <Styled.IconReact />}
-          {skill === "PostgreSQL" && <Styled.IconPosgre />}
-          {skill === "Adminer" && <Styled.IconAdminer />}
-          {skill === "Docker" && <Styled.IconDocker/>}
-          {skill}
-        </Styled.IconContainer>
-      ))}
-           
+
+            {skills.text.map((skill, index) => (
+              <Styled.IconContainer key={index}>
+                {skill === "Node.js" && <Styled.IconNode />}
+                {skill === "JavaScript" && <Styled.IconJavaScript />}
+                {skill === "HTML" && <Styled.IconHtml />}
+                {skill === "CSS3" && <Styled.IconCss />}
+                {skill === "React" && <Styled.IconReact />}
+                {skill === "PostgreSQL" && <Styled.IconPosgre />}
+                {skill === "Adminer" && <Styled.IconAdminer />}
+                {skill === "Docker" && <Styled.IconDocker />}
+                {skill}
+              </Styled.IconContainer>
+            ))}
+
           </Styled.AnimatedIconsContainer>
           <Styled.Click>Click</Styled.Click>
         </Styled.BookInnerBack>
