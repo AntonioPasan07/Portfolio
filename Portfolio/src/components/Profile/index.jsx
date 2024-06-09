@@ -22,7 +22,7 @@ const Profile = () => {
         <Styled.MotionIntro variants={fadeIn('down', 0.6)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: false, amount: 0.1 }}>Node.js | Express | JavaScript | Slonik | React | Vite | Axios | JQuery | PosgreSQL</Styled.MotionIntro>
+          viewport={{ once: false, amount: 0.1 }}>Node.Js, Express, JavaScript, React, Angular, TypeScript, JQuery, PosgreSQL</Styled.MotionIntro>
 
         <Styled.MotionDivContact variants={fadeIn('right', 0.6)}
           initial='hidden'

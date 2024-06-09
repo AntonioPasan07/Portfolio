@@ -14,9 +14,9 @@ const Project = () => {
           <Styled.CardProject>
             {Object.keys(data.project).map((key) => (
               <Styled.card2 key={key} style={{ backgroundImage: `url(${data.project[key].img})` }}>
-                <a href={data.project[key].link} target="_blank" rel="noopener noreferrer">
+                <Styled.Link href={data.project[key].link} target="_blank" rel="noopener noreferrer">
                   <Styled.Pcard>{data.project[key].title}</Styled.Pcard>
-                </a>
+                </Styled.Link>
               </Styled.card2>
             ))}
           </Styled.CardProject>
