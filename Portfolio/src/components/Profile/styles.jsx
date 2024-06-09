@@ -77,6 +77,7 @@ const MotionIntro = styled(motion.p)`
 `
 
 const TextContainer = styled.div`
+height: 390px;
 display: flex;
 flex-direction:column;
 @media (max-width: 630px) {

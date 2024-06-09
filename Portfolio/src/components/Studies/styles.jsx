@@ -209,6 +209,7 @@ flex-wrap: wrap;
 width: 100%;
 `
 const Pcard = styled.p`
+text-align:center;
 padding-top:20px;
 font-size: 20px;
 color: white;
@@ -235,7 +236,9 @@ const Container2 = styled.div`
     flex-direction: column;
     justify-content: space-around;
 `
-
+const Link = styled.a`
+text-decoration:none;
+`
 export default {
   BookContainer,
   Book,
@@ -264,4 +267,5 @@ export default {
   Container1,
   Container2,
   IconContainer,
+  Link,
 };

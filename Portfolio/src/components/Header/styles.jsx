@@ -20,7 +20,10 @@ width: 100px;
     color: white;
     background: linear-gradient(225deg, rgba(8,225,242,1) 0%, rgba(35,154,203,1) 15%, rgba(222,22,22,1) 100%);
     margin-right: 45px;
-
+    cursor: pointer;
+   &:hover{
+    color: #00ffff
+   }
 `
 const DecorationA = styled.a`
   text-decoration: none;
